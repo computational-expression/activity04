@@ -5,55 +5,57 @@ print("=== LOGIC DEBUGGING PRACTICE ===")
 print("Fix each example so it produces the correct results")
 print()
 
-# TODO 1: Fix the code below (average should be 85)
-print("Example 1: Grade average")
-grade1 = 80
-grade2 = 85
-grade3 = 90
-average = (grade1 + grade2 + grade3) / 2
-print(f"Average grade: {average}")
+# TODO 1: Fix the pizza slice calculator (should be 8 slices total)
+print("Example 1: Pizza Party")
+people = 4
+slices_per_person = 2
+total_slices = people * slices_per_person - 2
+print(f"We need {total_slices} pizza slices")
 print()
 
-# TODO 2: Fix the code below (should count down 5, 4, 3, 2, 1)
-print("Example 2: Countdown")
-print("Countdown:")
-for i in range(5):
-    print(i)
-print("Blast off!")
+# TODO 2: Fix the multiplication table (should show 3x table: 3, 6, 9, 12)
+print("Example 2: Multiplication Table")
+number = 3
+print(f"Multiplication table for {number}:")
+for i in range(1, 5):
+    result = number * i + 1
+    print(f"{number} x {i} = {result}")
 print()
 
-# TODO 3: Fix the code below (age 18 should show 'adult')
-print("Example 3: Age category")
-age = 18
-if age > 18:
-    print("adult")
-elif age < 18:
-    print("minor")
+# TODO 3: Fix the treasure chest pattern (should make a 4x4 square of X's)
+print("Example 3: Treasure Chest Grid")
+size = 4
+for row in range(size):
+    for col in range(size - 1):
+        print("X", end=" ")
+    print()
+print()
+
+# TODO 4: Fix the level up checker (level 10 should show 'Expert')
+print("Example 4: Game Level")
+player_level = 10
+if player_level > 10:
+    print("Expert")
+elif player_level > 5:
+    print("Intermediate")
 else:
-    print("exactly 18")
+    print("Beginner")
 print()
 
-# TODO 4: Fix the code below ('password123' should be accepted)
-print("Example 4: Password check")
-password = "password123"
-if password == "Password123":
-    print("Access granted")
-else:
-    print("Access denied")
+# TODO 5: Fix the coin collector (while loop should collect exactly 10 coins)
+print("Example 5: Coin Collection")
+coins = 0
+target = 10
+while coins <= target:
+    coins += 2
+    print(f"Collected {coins} coins")
+print(f"Final collection: {coins} coins")
 print()
 
-# TODO 5: Fix the code below (sum should be 15)
-print("Example 5: Sum calculation")
-total = 1
-for num in range(1, 6):
-    total = total + num
-print(f"Total: {total}")
-print()
-
-# TODO 6: Fix the code below (get the last item)
-print("Example 6: Last item")
-fruits = ["apple", "banana", "cherry"]
-last_fruit = fruits[3]
-print(f"Last fruit: {last_fruit}")
+# TODO 6: Fix the high score list (should get the highest score)
+print("Example 6: Gaming Leaderboard")
+scores = [85, 92, 78, 96, 88]
+highest_score = scores[0]
+print(f"Highest score: {highest_score}")
 
 print("All examples completed!")
