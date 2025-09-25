@@ -22,8 +22,9 @@ Complete the TODOs in the Python files to fix the broken code. Work through each
 - ✅ Use **print statements** for tracing loop execution
 - ✅ Test code incrementally with complex control structures
 
-**Programming Concepts:**
-- ✅ Debug **nested loop patterns** (grids, tables, patterns)
-- ✅ Fix **while loop logic** and termination conditions
-- ✅ Understand loop variable scope and iteration issues
-- ✅ Strengthen **loop syntax** and indentation knowledge
+## Grading Rubric
+
+This activity is assessed on a **pass/fail basis**:
+
+- **1 point**: Awarded if 50% or more of the program functionality is completed
+- **0 points**: Awarded if less than 50% of the program functionality is completed
