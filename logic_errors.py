@@ -5,57 +5,69 @@ print("=== LOGIC DEBUGGING PRACTICE ===")
 print("Fix each example so it produces the correct results")
 print()
 
-# TODO 1: Fix the pizza slice calculator (should be 8 slices total)
-print("Example 1: Pizza Party")
-people = 4
-slices_per_person = 2
-total_slices = people * slices_per_person - 2
-print(f"We need {total_slices} pizza slices")
+# TODO 1: Fix the chocolate factory conveyor belt (should show 3 rows of 4 chocolates each)
+print("Example 1: Chocolate Factory Production Line")
+conveyor_rows = 3
+chocolates_per_row = 4
+for row in range(conveyor_rows + 1):  # Off-by-one error!
+    print(f"Row {row + 1}: ", end="")
+    for chocolate in range(chocolates_per_row):
+        print("🍫", end=" ")
+    print()
+print("Production complete!")
 print()
 
-# TODO 2: Fix the multiplication table (should show 3x table: 3, 6, 9, 12)
-print("Example 2: Multiplication Table")
-number = 3
-print(f"Multiplication table for {number}:")
-for i in range(1, 5):
-    result = number * i + 1
-    print(f"{number} x {i} = {result}")
-print()
-
-# TODO 3: Fix the treasure chest pattern (should make a 4x4 square of X's)
-print("Example 3: Treasure Chest Grid")
-size = 4
-for row in range(size):
-    for col in range(size - 1):
-        print("X", end=" ")
+# TODO 2: Fix the rainbow pattern (should make a triangle: R, RG, RGB)
+print("Example 2: Rainbow Triangle")
+colors = "RGB"
+for row in range(1, 4):
+    for col in range(row + 1):
+        print(colors[col], end="")
     print()
 print()
 
-# TODO 4: Fix the level up checker (level 10 should show 'Expert')
-print("Example 4: Game Level")
-player_level = 10
-if player_level > 10:
-    print("Expert")
-elif player_level > 5:
-    print("Intermediate")
-else:
-    print("Beginner")
+# TODO 3: Fix the rocket ship pattern (should make a complete rocket)
+#    /\
+#    ||
+#   /\/\
+#   ||||
+#  /\/\/\
+#  ||||||
+# /\/\/\/\
+# ||||||||
+print("Example 3: Rocket Ship Launch Pad")
+rocket_parts = 4
+for section in range(rocket_parts):
+    # Nose cone
+    for space in range(rocket_parts - section):
+        print(" ", end="")
+    for tip in range(section):
+        print("/\\", end="")
+    print()
+    # Body section  
+    for space in range(rocket_parts - section):
+        print(" ", end="")
+    for body in range(section):
+        print("||", end="")
+    print()
 print()
 
-# TODO 5: Fix the coin collector (while loop should collect exactly 10 coins)
-print("Example 5: Coin Collection")
-coins = 0
-target = 10
-while coins <= target:
-    coins += 2
-    print(f"Collected {coins} coins")
-print(f"Final collection: {coins} coins")
+# TODO 4: Fix the word spell-checker (should spell "MAGIC" letter by letter)
+print("Example 4: Magic Spell Casting")
+magic_word = "MAGIC"
+for letter_pos in range(5):  # 5 letters in MAGIC
+    print(f"Casting letter {letter_pos + 1}: ", end="")
+    for repeat in range(letter_pos):
+        print(magic_word[letter_pos], end="")
+    print()
 print()
 
-# TODO 6: Fix the high score list (should get the highest score)
-print("Example 6: Gaming Leaderboard")
-scores = [85, 92, 78, 96, 88]
-highest_score = scores[0]
-print(f"Highest score: {highest_score}")
+# TODO 5: Fix the birthday countdown (while loop should count down from 5 to 1)
+print("Example 5: Birthday Party Countdown")
+countdown = 5
+while countdown >= 1:
+    print(f"🎉 {countdown}!")
+    countdown += 1  
+print("🎂 Happy Birthday!")
 
 print("All examples completed!")

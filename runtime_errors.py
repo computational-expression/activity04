@@ -5,62 +5,44 @@ print("=== RUNTIME DEBUGGING PRACTICE ===")
 print("Fix each example so it runs without crashing")
 print()
 
-# TODO 1: Fix the treasure map grid creator
-print("Example 1: Treasure Map Grid")
-rows = 3
+# TODO 1: Fix the dance floor grid
+print("Example 1: Dance Floor Setup")
+rows = 4
 cols = 0
 for row in range(rows):
     for col in range(cols):
-        print(f"({row},{col})", end=" ")
+        print("💃", end=" ")
     print()
-print("Map created!")
+print("Dance floor ready!")
 print()
 
-# TODO 2: Fix the high score tracker
-print("Example 2: High Score List")
-high_scores = [95, 87, 92]
-print(f"Top score: {high_scores[0]}")
-print(f"Fourth place: {high_scores[3]}")
+# TODO 2: Fix the donut conversion disaster
+print("Example 2: Donut Math Gone Wrong")
+donuts = "twelve"
+people = 4
+donuts_per_person = int(donuts) / people
+print(f"Each person gets {donuts_per_person} donuts!")
 print()
 
-# TODO 3: Fix the password strength checker
-print("Example 3: Password Checker")
-password = "abc123"
-strength = int(password)
-if strength > 6:
-    print("Strong password!")
-else:
-    print("Weak password")
+# TODO 3: Fix the secret message decoder
+print("Example 3: Top Secret Message")
+secret_message = ""
+decoded_letter = secret_message[0]
+print(f"First letter of secret: {decoded_letter}")
 print()
 
-# TODO 4: Fix the quest item counter (nested loops)
-print("Example 4: Quest Items")
-backpack = [["sword", "shield"], ["potion", "scroll"]]
-total_items = 0
-for bag_section in backpack:
-    for item in bag_section:
-        item_value = inventory_values[item]
-        total_items += item_value
-print(f"Total items: {total_items}")
+# TODO 4: Fix the pizza slice calculator
+print("Example 4: Pizza Party Math")
+pizza_slices = 24
+guests = 0
+slices_per_guest = pizza_slices / guests  
+print(f"Each guest gets {slices_per_guest} slices!")
 print()
 
-# TODO 5: Fix the guessing game (while loop)
-print("Example 5: Number Guessing Game")
-secret_number = 7
-guess = 0
-attempts = 0
-while guess != secret_number:
-    guess = int(input("Guess the number (1-10): "))
-    attempts += 1
-    if attempts > 3:
-        break
-print(f"You guessed {guess} in {attempts} attempts!")
-print()
-
-# TODO 6: Fix the spell checker
-print("Example 6: Magic Spell")
-spell_word = ""
-first_letter = spell_word[0]
-print(f"Spell starts with: {first_letter}")
+# TODO 5: Fix the high score tracker
+print("Example 5: Gaming High Score")
+player_name = "Alex"
+high_score = 9500
+print(f"Player {player_name} achieved a score of {hight_score}!")  # Typo: hight_score instead of high_score
 
 print("All examples completed!")

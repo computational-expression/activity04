@@ -5,42 +5,42 @@ print("=== SYNTAX DEBUGGING PRACTICE ===")
 print("Fix each example so it runs without errors")
 print()
 
-# TODO 1: Fix the pizza order system
-print("Example 1: Pizza Order")
-pizza_size = input("What size pizza? (small/medium/large): "
-print(f"You ordered a {pizza_size} pizza!")
+# TODO 1: Fix the taco order system
+print("Example 1: Taco Tuesday Order")
+taco_count = input("How many tacos do you want? "
+print(f"Coming right up! {taco_count} delicious tacos!")
 print()
 
-# TODO 2: Fix the game score checker
-print("Example 2: Game Score")
-score = int(input("Enter your game score: "))
-if score = 100:
-    print("Perfect score!")
+# TODO 2: Fix the superhero power level
+print("Example 2: Superhero Academy")
+power_level = int(input("Enter your power level (1-100): "))
+if power_level = 100:
+    print("You're basically Superman!")
 else:
-    print(f"Your score: {score}")
+    print(f"Power level: {power_level} - Keep training!")
 print()
 
-# TODO 3: Fix the weather advisor
-print("Example 3: Weather Advice")
-weather = input("What's the weather like? ")
-if weather == "sunny"
-    print("Wear sunglasses!")
-elif weather == "rainy"
-    print("Bring an umbrella!")
+# TODO 3: Fix the coffee shop advisor
+print("Example 3: Coffee Emergency")
+mood = input("How are you feeling? (tired/energetic/sleepy): ")
+if mood == "tired"
+    print("Double espresso incoming!")
+elif mood == "sleepy"
+    print("Maybe try a cappuccino!")
 else
-    print("Have a nice day!")
+    print("How about a nice latte?")
 print()
 
-# TODO 4: Fix the star pattern maker
-print("Example 4: Star Pattern")
+# TODO 4: Fix the emoji heart pattern (nested loops)
+print("Example 4: Love Letter Pattern")
 for row in range(3):
-    for star in range(row + 1):
-    print("*", end="")
+    for heart in range(row + 1):
+    print("♥", end=" ")
     print()
-print("Pattern complete!")
+print("Pattern of love complete!")
 print()
 
-# TODO 5: Fix the motivational message
-print("Example 5: Daily Motivation")
-message = "You're doing great today!"
-print(message)
+# TODO 5: Fix the cat fact generator
+print("Example 5: Daily Cat Wisdom")
+cat_fact = "Cats spend 70% of their lives sleeping. Lucky cats!
+print(cat_fact)
